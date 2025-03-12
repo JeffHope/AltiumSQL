@@ -1,0 +1,392 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+body {
+    background-color: #F8FAFC;
+    padding: 10px;
+}
+
+#table_db {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: -1276px;
+    width: 1300px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 4px solid #9AA6B2;
+}
+
+    #table_db tr, td, tbody {
+        padding: 15px;
+        table-layout: fixed;
+        border-collapse: collapse;
+        border: 3px solid #9AA6B2;
+        text-align: center;
+    }
+
+    #table_db tbody {
+        background-color: #F8FAFC;
+        color: #9AA6B2;
+    }
+
+    #table_db tbody {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+    #table_db thead {
+        padding: 15px;
+        table-layout: fixed;
+        border-collapse: collapse;
+        background-color: #9AA6B2;
+        color: #F8FAFC;
+        border: 4px solid #9AA6B2;
+        overflow-y: scroll;
+        overflow-x: scroll;
+    }
+
+#table_db {
+    max-height: 700px;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+#list_table {
+    text-align: center;
+    margin-left: -405px;
+    margin-top: -5px;
+    width: auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 2px solid #BCCCDC;
+}
+
+    #list_table td {
+        padding: 0;
+        margin: 0;
+        border: none #BCCCDC;
+    }
+
+.btn {
+    display: block;
+    height: auto;
+    width: 100%;
+    background-color: #D9EAFD;
+    color: #9AA6B2;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#sync_bt {
+    position: relative;
+    top: -1398px;
+    right: -1280px;
+}
+#add_table {
+    position: relative;
+    top: -1455px;
+    right: -1500px;
+}
+.table_buttons {
+    position: relative;
+    top: -1335px;
+    right: -160px;
+}
+
+/*Стили модальных окон*/
+.modal_edit_comp {
+    display: none;
+    overflow-x: auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 0;
+    top: 0;
+    justify-content: center;
+}
+.modal_edit_comp_content {
+    background-color: #ffffff;
+    margin: auto;
+    overflow: auto;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+.close_edit_comp {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+/*#send_data_edit {
+    position: absolute;
+    padding: 10px;
+    top: 90px;
+    border-radius: 8%;
+}*/
+.modal_del_comp {
+    display: none;
+    overflow-x: auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 0;
+    top: 0;
+    justify-content: center;
+}
+.modal_del_comp_content {
+    background-color: #ffffff;
+    margin: auto;
+    overflow: auto;
+    padding: 30px;
+    width: 50%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+.close_del_comp {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.modal_new_comp {
+    display: none;
+    overflow-x: auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 0;
+    top: 0;
+    justify-content: center;
+}
+.modal_new_comp_content {
+    background-color: #ffffff;
+    margin: auto;
+    overflow: auto;
+    
+    padding: 30px;
+    width: 50%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+.close_new_comp {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 15px 15px;
+    background-color: #f44336;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.modal_table, .modal_add_field_new_table {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 0;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_table_content, .md_add_field_new_table_content{
+    background-color: #ffffff;
+    margin: auto;
+    overflow: auto;
+    padding: 60px;
+    width: 50%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close-btn, .close-btn-fields, #close_first_new_comp {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    background-color: #f44336;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    .close-btn:hover, .close-btn-fields:hover {
+        background-color: #d32f2f;
+        transform: scale(1.1);
+    }
+
+    .close-btn:active, .close-btn-fields:active {
+        background-color: #b71c1c;
+        transform: scale(0.9);
+    }
+
+.accept_btn, .btn_add_new_field, .btn_send_data {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    .accept_btn:hover, .btn_add_new_field:hover, .btn_send_data:hover {
+        background-color: #45a049;
+        transform: translateY(-2px);
+    }
+
+    .accept_btn:active, .btn_add_new_field:active, .btn_send_data:active {
+        background-color: #3d8b40;
+        transform: translateY(0);
+    }
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+    input[type="text"]:focus {
+        border-color: #4CAF50;
+        box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+        outline: none;
+    }
+
+#name_resualt_output {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.next-step-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color:  thistle;
+    color: black;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    .next-step-btn:hover {
+        background-color: #1e88e5;
+        transform: translateY(-2px);
+    }
+
+    .next-step-btn:active {
+        background-color: #1976d2;
+        transform: translateY();
+    }
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#table_db td {
+    padding: 15px;
+    border: 3px solid #9AA6B2;
+    text-align: center;
+}
+
+.new-partnumber-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}

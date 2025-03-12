@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AltiumSQL/1.0.0": {
+        "runtime": {
+          "AltiumSQL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AltiumSQL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
