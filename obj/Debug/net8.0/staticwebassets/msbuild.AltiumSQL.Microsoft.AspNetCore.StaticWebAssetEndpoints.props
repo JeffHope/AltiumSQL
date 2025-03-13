@@ -12,17 +12,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"y9xpv1xfl6"},{"Name":"integrity","Value":"sha256-SpiEHmn81urT4H6WbpPN6vhW4QXsQ1mDLeEExas0bU0="},{"Name":"label","Value":"_content/AltiumSQL/AltiumSQL.bundle.scp.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1127"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022SpiEHmn81urT4H6WbpPN6vhW4QXsQ1mDLeEExas0bU0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 12 Mar 2025 17:09:24 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/AltiumSQL/css/site.c2tiyv64ts.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"c2tiyv64ts"},{"Name":"integrity","Value":"sha256-pAGv4ietcJNk/EwsQZ5BN9\u002BK4MuNYS2a9wl4Jw\u002Bq9D0="},{"Name":"label","Value":"_content/AltiumSQL/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"362"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022pAGv4ietcJNk/EwsQZ5BN9\u002BK4MuNYS2a9wl4Jw\u002Bq9D0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 12 Mar 2025 17:08:33 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AltiumSQL/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-pAGv4ietcJNk/EwsQZ5BN9\u002BK4MuNYS2a9wl4Jw\u002Bq9D0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"362"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022pAGv4ietcJNk/EwsQZ5BN9\u002BK4MuNYS2a9wl4Jw\u002Bq9D0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 12 Mar 2025 17:08:33 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-HCMl3erl7wAi9\u002BXCAT1\u002Bbwi7c2m603lXNg2/ZO\u002BEYPc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"8397"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022HCMl3erl7wAi9\u002BXCAT1\u002Bbwi7c2m603lXNg2/ZO\u002BEYPc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Feb 2025 10:56:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AltiumSQL/css/site.ssd99v7qup.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ssd99v7qup"},{"Name":"integrity","Value":"sha256-HCMl3erl7wAi9\u002BXCAT1\u002Bbwi7c2m603lXNg2/ZO\u002BEYPc="},{"Name":"label","Value":"_content/AltiumSQL/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8397"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022HCMl3erl7wAi9\u002BXCAT1\u002Bbwi7c2m603lXNg2/ZO\u002BEYPc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Feb 2025 10:56:17 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AltiumSQL/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
@@ -36,6 +36,90 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 12 Mar 2025 17:08:34 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AltiumSQL/js/add_comp_button.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\add_comp_button.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lIIGMEyGiDTzMFmB9GcTRooiPGXNxwuIHeW79xhTkKU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4491"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022lIIGMEyGiDTzMFmB9GcTRooiPGXNxwuIHeW79xhTkKU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 12:58:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AltiumSQL/js/add_comp_button.oxndzw8vkp.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\add_comp_button.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"oxndzw8vkp"},{"Name":"integrity","Value":"sha256-lIIGMEyGiDTzMFmB9GcTRooiPGXNxwuIHeW79xhTkKU="},{"Name":"label","Value":"_content/AltiumSQL/js/add_comp_button.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4491"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022lIIGMEyGiDTzMFmB9GcTRooiPGXNxwuIHeW79xhTkKU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 12:58:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AltiumSQL/js/add_table_button.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\add_table_button.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8bC/3aahsoO7SOwn/38/AHkwa8vTZNe1bKvPivzGJ7U="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4083"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00228bC/3aahsoO7SOwn/38/AHkwa8vTZNe1bKvPivzGJ7U=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 07:21:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AltiumSQL/js/add_table_button.new0fzdscb.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\add_table_button.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"new0fzdscb"},{"Name":"integrity","Value":"sha256-8bC/3aahsoO7SOwn/38/AHkwa8vTZNe1bKvPivzGJ7U="},{"Name":"label","Value":"_content/AltiumSQL/js/add_table_button.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4083"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00228bC/3aahsoO7SOwn/38/AHkwa8vTZNe1bKvPivzGJ7U=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 07:21:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AltiumSQL/js/del_comp.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\del_comp.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-u2pJA8HZk8Jtoe5dJS/KygA9\u002B54wWvDx8nHsIswN7gE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3315"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022u2pJA8HZk8Jtoe5dJS/KygA9\u002B54wWvDx8nHsIswN7gE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 12:58:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AltiumSQL/js/del_comp.z21p9g3afb.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\del_comp.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"z21p9g3afb"},{"Name":"integrity","Value":"sha256-u2pJA8HZk8Jtoe5dJS/KygA9\u002B54wWvDx8nHsIswN7gE="},{"Name":"label","Value":"_content/AltiumSQL/js/del_comp.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3315"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022u2pJA8HZk8Jtoe5dJS/KygA9\u002B54wWvDx8nHsIswN7gE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 12:58:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AltiumSQL/js/edit_comp.frb0mqj54u.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\edit_comp.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"frb0mqj54u"},{"Name":"integrity","Value":"sha256-ddZl1Dzf2gGyJZYqtUIhp6nknaqlGSu5N2Zlt8/HgnU="},{"Name":"label","Value":"_content/AltiumSQL/js/edit_comp.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6617"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ddZl1Dzf2gGyJZYqtUIhp6nknaqlGSu5N2Zlt8/HgnU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 12:58:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AltiumSQL/js/edit_comp.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\edit_comp.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ddZl1Dzf2gGyJZYqtUIhp6nknaqlGSu5N2Zlt8/HgnU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6617"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ddZl1Dzf2gGyJZYqtUIhp6nknaqlGSu5N2Zlt8/HgnU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 12:58:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AltiumSQL/js/get_tables.6x0s8ansfk.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\get_tables.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6x0s8ansfk"},{"Name":"integrity","Value":"sha256-qtOjEm4FKOA97X/ZJRiYE8TRko/T72PVxH8hboRvzEM="},{"Name":"label","Value":"_content/AltiumSQL/js/get_tables.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3655"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022qtOjEm4FKOA97X/ZJRiYE8TRko/T72PVxH8hboRvzEM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 12:58:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AltiumSQL/js/get_tables.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\get_tables.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qtOjEm4FKOA97X/ZJRiYE8TRko/T72PVxH8hboRvzEM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3655"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022qtOjEm4FKOA97X/ZJRiYE8TRko/T72PVxH8hboRvzEM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 12:58:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AltiumSQL/js/hystmodal.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\hystmodal.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-yDaSvV0CzDA/KsYLtmHvXnlyyscovuDz4IUi9/EiWW0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7107"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022yDaSvV0CzDA/KsYLtmHvXnlyyscovuDz4IUi9/EiWW0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 03 Feb 2025 08:47:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AltiumSQL/js/hystmodal.os8lf69hl9.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\hystmodal.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"os8lf69hl9"},{"Name":"integrity","Value":"sha256-yDaSvV0CzDA/KsYLtmHvXnlyyscovuDz4IUi9/EiWW0="},{"Name":"label","Value":"_content/AltiumSQL/js/hystmodal.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7107"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022yDaSvV0CzDA/KsYLtmHvXnlyyscovuDz4IUi9/EiWW0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 03 Feb 2025 08:47:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AltiumSQL/js/index.12do2fv267.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"12do2fv267"},{"Name":"integrity","Value":"sha256-51naF/DAdbWqb4lpB811BABk/wB/BordKNCwW9eJv68="},{"Name":"label","Value":"_content/AltiumSQL/js/index.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"127"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u002251naF/DAdbWqb4lpB811BABk/wB/BordKNCwW9eJv68=\u0022"},{"Name":"Last-Modified","Value":"Mon, 03 Feb 2025 08:47:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AltiumSQL/js/index.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-51naF/DAdbWqb4lpB811BABk/wB/BordKNCwW9eJv68="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"127"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u002251naF/DAdbWqb4lpB811BABk/wB/BordKNCwW9eJv68=\u0022"},{"Name":"Last-Modified","Value":"Mon, 03 Feb 2025 08:47:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AltiumSQL/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -47,6 +131,30 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xtxxf3hu2r"},{"Name":"integrity","Value":"sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="},{"Name":"label","Value":"_content/AltiumSQL/js/site.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"231"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 12 Mar 2025 17:08:33 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AltiumSQL/js/synchronization_db_button.baeow0f4lo.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\synchronization_db_button.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"baeow0f4lo"},{"Name":"integrity","Value":"sha256-U26VM71XYPx9tA/cTMrKko0KUFC\u002BxMi8wdUArt5qaio="},{"Name":"label","Value":"_content/AltiumSQL/js/synchronization_db_button.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"677"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022U26VM71XYPx9tA/cTMrKko0KUFC\u002BxMi8wdUArt5qaio=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 12:58:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AltiumSQL/js/synchronization_db_button.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\synchronization_db_button.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-U26VM71XYPx9tA/cTMrKko0KUFC\u002BxMi8wdUArt5qaio="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"677"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022U26VM71XYPx9tA/cTMrKko0KUFC\u002BxMi8wdUArt5qaio=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 12:58:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AltiumSQL/js/upgrade_edit_component.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\upgrade_edit_component.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-yiHae\u002B42qUOr6lokfwmAeBIX5qsi6zZZ8bJ\u002BT6nVdrM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7318"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022yiHae\u002B42qUOr6lokfwmAeBIX5qsi6zZZ8bJ\u002BT6nVdrM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 12:58:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AltiumSQL/js/upgrade_edit_component.mk1x0yx2fm.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\upgrade_edit_component.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mk1x0yx2fm"},{"Name":"integrity","Value":"sha256-yiHae\u002B42qUOr6lokfwmAeBIX5qsi6zZZ8bJ\u002BT6nVdrM="},{"Name":"label","Value":"_content/AltiumSQL/js/upgrade_edit_component.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7318"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022yiHae\u002B42qUOr6lokfwmAeBIX5qsi6zZZ8bJ\u002BT6nVdrM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 12:58:24 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AltiumSQL/lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>

@@ -13,8 +13,44 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\add_comp_button.js",
+      "PackagePath": "staticwebassets\\js\\add_comp_button.js"
+    },
+    {
+      "Id": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\add_table_button.js",
+      "PackagePath": "staticwebassets\\js\\add_table_button.js"
+    },
+    {
+      "Id": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\del_comp.js",
+      "PackagePath": "staticwebassets\\js\\del_comp.js"
+    },
+    {
+      "Id": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\edit_comp.js",
+      "PackagePath": "staticwebassets\\js\\edit_comp.js"
+    },
+    {
+      "Id": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\get_tables.js",
+      "PackagePath": "staticwebassets\\js\\get_tables.js"
+    },
+    {
+      "Id": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\hystmodal.js",
+      "PackagePath": "staticwebassets\\js\\hystmodal.js"
+    },
+    {
+      "Id": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\index.js",
+      "PackagePath": "staticwebassets\\js\\index.js"
+    },
+    {
       "Id": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\synchronization_db_button.js",
+      "PackagePath": "staticwebassets\\js\\synchronization_db_button.js"
+    },
+    {
+      "Id": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\upgrade_edit_component.js",
+      "PackagePath": "staticwebassets\\js\\upgrade_edit_component.js"
     },
     {
       "Id": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\lib\\bootstrap\\LICENSE",

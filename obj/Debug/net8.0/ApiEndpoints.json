@@ -1,1 +1,39 @@
-[]
+[
+  {
+    "ContainingType": "AltiumSQL.Controllers.DynamicController",
+    "Method": "GetTableData",
+    "RelativePath": "api/Dynamic/{tableName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tableName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AltiumSQL.Controllers.DynamicController",
+    "Method": "AddData",
+    "RelativePath": "api/Dynamic/{tableName}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tableName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "data",
+        "Type": "System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

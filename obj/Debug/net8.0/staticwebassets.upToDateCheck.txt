@@ -1,6 +1,15 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\js\add_comp_button.js
+wwwroot\js\add_table_button.js
+wwwroot\js\del_comp.js
+wwwroot\js\edit_comp.js
+wwwroot\js\get_tables.js
+wwwroot\js\hystmodal.js
+wwwroot\js\index.js
 wwwroot\js\site.js
+wwwroot\js\synchronization_db_button.js
+wwwroot\js\upgrade_edit_component.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css

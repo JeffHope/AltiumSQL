@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace AltiumSQL
 {
     public class Program
@@ -8,6 +10,10 @@ namespace AltiumSQL
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<DynamicDbContext>(options =>
+                            options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            builder.Services.AddScoped<DynamicService>();
 
             var app = builder.Build();
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "V99UyLAAat9CkLRRZ5R31buP9/A5vykPSV626x4MQcI=",
+  "Hash": "O0kwcJwHITC3vf0GRl/F57sHNKv74sX+tfWJ/MVFXrk=",
   "Source": "AltiumSQL",
   "BasePath": "_content/AltiumSQL",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c2tiyv64ts",
-      "Integrity": "pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=",
+      "Fingerprint": "ssd99v7qup",
+      "Integrity": "HCMl3erl7wAi9+XCAT1+bwi7c2m603lXNg2/ZO+EYPc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -101,6 +101,153 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\add_comp_button.js",
+      "SourceId": "AltiumSQL",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\",
+      "BasePath": "_content/AltiumSQL",
+      "RelativePath": "js/add_comp_button#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oxndzw8vkp",
+      "Integrity": "lIIGMEyGiDTzMFmB9GcTRooiPGXNxwuIHeW79xhTkKU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\add_comp_button.js"
+    },
+    {
+      "Identity": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\add_table_button.js",
+      "SourceId": "AltiumSQL",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\",
+      "BasePath": "_content/AltiumSQL",
+      "RelativePath": "js/add_table_button#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "new0fzdscb",
+      "Integrity": "8bC/3aahsoO7SOwn/38/AHkwa8vTZNe1bKvPivzGJ7U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\add_table_button.js"
+    },
+    {
+      "Identity": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\del_comp.js",
+      "SourceId": "AltiumSQL",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\",
+      "BasePath": "_content/AltiumSQL",
+      "RelativePath": "js/del_comp#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z21p9g3afb",
+      "Integrity": "u2pJA8HZk8Jtoe5dJS/KygA9+54wWvDx8nHsIswN7gE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\del_comp.js"
+    },
+    {
+      "Identity": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\edit_comp.js",
+      "SourceId": "AltiumSQL",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\",
+      "BasePath": "_content/AltiumSQL",
+      "RelativePath": "js/edit_comp#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "frb0mqj54u",
+      "Integrity": "ddZl1Dzf2gGyJZYqtUIhp6nknaqlGSu5N2Zlt8/HgnU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\edit_comp.js"
+    },
+    {
+      "Identity": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\get_tables.js",
+      "SourceId": "AltiumSQL",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\",
+      "BasePath": "_content/AltiumSQL",
+      "RelativePath": "js/get_tables#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6x0s8ansfk",
+      "Integrity": "qtOjEm4FKOA97X/ZJRiYE8TRko/T72PVxH8hboRvzEM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\get_tables.js"
+    },
+    {
+      "Identity": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\hystmodal.js",
+      "SourceId": "AltiumSQL",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\",
+      "BasePath": "_content/AltiumSQL",
+      "RelativePath": "js/hystmodal#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "os8lf69hl9",
+      "Integrity": "yDaSvV0CzDA/KsYLtmHvXnlyyscovuDz4IUi9/EiWW0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\hystmodal.js"
+    },
+    {
+      "Identity": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\index.js",
+      "SourceId": "AltiumSQL",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\",
+      "BasePath": "_content/AltiumSQL",
+      "RelativePath": "js/index#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "12do2fv267",
+      "Integrity": "51naF/DAdbWqb4lpB811BABk/wB/BordKNCwW9eJv68=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\index.js"
+    },
+    {
       "Identity": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\site.js",
       "SourceId": "AltiumSQL",
       "SourceType": "Discovered",
@@ -120,6 +267,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\synchronization_db_button.js",
+      "SourceId": "AltiumSQL",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\",
+      "BasePath": "_content/AltiumSQL",
+      "RelativePath": "js/synchronization_db_button#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "baeow0f4lo",
+      "Integrity": "U26VM71XYPx9tA/cTMrKko0KUFC+xMi8wdUArt5qaio=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\synchronization_db_button.js"
+    },
+    {
+      "Identity": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\upgrade_edit_component.js",
+      "SourceId": "AltiumSQL",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\",
+      "BasePath": "_content/AltiumSQL",
+      "RelativePath": "js/upgrade_edit_component#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mk1x0yx2fm",
+      "Integrity": "yiHae+42qUOr6lokfwmAeBIX5qsi6zZZ8bJ+T6nVdrM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\upgrade_edit_component.js"
     },
     {
       "Identity": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
@@ -1485,51 +1674,6 @@
       ]
     },
     {
-      "Route": "css/site.c2tiyv64ts.css",
-      "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "362"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:08:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "c2tiyv64ts"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
-        }
-      ]
-    },
-    {
       "Route": "css/site.css",
       "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -1540,7 +1684,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "8397"
         },
         {
           "Name": "Content-Type",
@@ -1548,11 +1692,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"HCMl3erl7wAi9+XCAT1+bwi7c2m603lXNg2/ZO+EYPc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 17:08:33 GMT"
+          "Value": "Thu, 13 Feb 2025 10:56:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1562,7 +1706,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-HCMl3erl7wAi9+XCAT1+bwi7c2m603lXNg2/ZO+EYPc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.ssd99v7qup.css",
+      "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8397"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HCMl3erl7wAi9+XCAT1+bwi7c2m603lXNg2/ZO+EYPc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Feb 2025 10:56:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ssd99v7qup"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HCMl3erl7wAi9+XCAT1+bwi7c2m603lXNg2/ZO+EYPc="
         }
       ]
     },
@@ -1649,6 +1838,580 @@
       ]
     },
     {
+      "Route": "js/add_comp_button.js",
+      "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\add_comp_button.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4491"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lIIGMEyGiDTzMFmB9GcTRooiPGXNxwuIHeW79xhTkKU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 12:58:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lIIGMEyGiDTzMFmB9GcTRooiPGXNxwuIHeW79xhTkKU="
+        }
+      ]
+    },
+    {
+      "Route": "js/add_comp_button.oxndzw8vkp.js",
+      "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\add_comp_button.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4491"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lIIGMEyGiDTzMFmB9GcTRooiPGXNxwuIHeW79xhTkKU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 12:58:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oxndzw8vkp"
+        },
+        {
+          "Name": "label",
+          "Value": "js/add_comp_button.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lIIGMEyGiDTzMFmB9GcTRooiPGXNxwuIHeW79xhTkKU="
+        }
+      ]
+    },
+    {
+      "Route": "js/add_table_button.js",
+      "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\add_table_button.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4083"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8bC/3aahsoO7SOwn/38/AHkwa8vTZNe1bKvPivzGJ7U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 07:21:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8bC/3aahsoO7SOwn/38/AHkwa8vTZNe1bKvPivzGJ7U="
+        }
+      ]
+    },
+    {
+      "Route": "js/add_table_button.new0fzdscb.js",
+      "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\add_table_button.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4083"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8bC/3aahsoO7SOwn/38/AHkwa8vTZNe1bKvPivzGJ7U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 07:21:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "new0fzdscb"
+        },
+        {
+          "Name": "label",
+          "Value": "js/add_table_button.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8bC/3aahsoO7SOwn/38/AHkwa8vTZNe1bKvPivzGJ7U="
+        }
+      ]
+    },
+    {
+      "Route": "js/del_comp.js",
+      "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\del_comp.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3315"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u2pJA8HZk8Jtoe5dJS/KygA9+54wWvDx8nHsIswN7gE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 12:58:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u2pJA8HZk8Jtoe5dJS/KygA9+54wWvDx8nHsIswN7gE="
+        }
+      ]
+    },
+    {
+      "Route": "js/del_comp.z21p9g3afb.js",
+      "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\del_comp.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3315"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u2pJA8HZk8Jtoe5dJS/KygA9+54wWvDx8nHsIswN7gE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 12:58:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z21p9g3afb"
+        },
+        {
+          "Name": "label",
+          "Value": "js/del_comp.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u2pJA8HZk8Jtoe5dJS/KygA9+54wWvDx8nHsIswN7gE="
+        }
+      ]
+    },
+    {
+      "Route": "js/edit_comp.frb0mqj54u.js",
+      "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\edit_comp.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6617"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ddZl1Dzf2gGyJZYqtUIhp6nknaqlGSu5N2Zlt8/HgnU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 12:58:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "frb0mqj54u"
+        },
+        {
+          "Name": "label",
+          "Value": "js/edit_comp.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ddZl1Dzf2gGyJZYqtUIhp6nknaqlGSu5N2Zlt8/HgnU="
+        }
+      ]
+    },
+    {
+      "Route": "js/edit_comp.js",
+      "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\edit_comp.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6617"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ddZl1Dzf2gGyJZYqtUIhp6nknaqlGSu5N2Zlt8/HgnU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 12:58:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ddZl1Dzf2gGyJZYqtUIhp6nknaqlGSu5N2Zlt8/HgnU="
+        }
+      ]
+    },
+    {
+      "Route": "js/get_tables.6x0s8ansfk.js",
+      "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\get_tables.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3655"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qtOjEm4FKOA97X/ZJRiYE8TRko/T72PVxH8hboRvzEM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 12:58:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6x0s8ansfk"
+        },
+        {
+          "Name": "label",
+          "Value": "js/get_tables.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qtOjEm4FKOA97X/ZJRiYE8TRko/T72PVxH8hboRvzEM="
+        }
+      ]
+    },
+    {
+      "Route": "js/get_tables.js",
+      "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\get_tables.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3655"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qtOjEm4FKOA97X/ZJRiYE8TRko/T72PVxH8hboRvzEM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 12:58:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qtOjEm4FKOA97X/ZJRiYE8TRko/T72PVxH8hboRvzEM="
+        }
+      ]
+    },
+    {
+      "Route": "js/hystmodal.js",
+      "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\hystmodal.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7107"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yDaSvV0CzDA/KsYLtmHvXnlyyscovuDz4IUi9/EiWW0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Feb 2025 08:47:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yDaSvV0CzDA/KsYLtmHvXnlyyscovuDz4IUi9/EiWW0="
+        }
+      ]
+    },
+    {
+      "Route": "js/hystmodal.os8lf69hl9.js",
+      "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\hystmodal.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7107"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yDaSvV0CzDA/KsYLtmHvXnlyyscovuDz4IUi9/EiWW0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Feb 2025 08:47:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "os8lf69hl9"
+        },
+        {
+          "Name": "label",
+          "Value": "js/hystmodal.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yDaSvV0CzDA/KsYLtmHvXnlyyscovuDz4IUi9/EiWW0="
+        }
+      ]
+    },
+    {
+      "Route": "js/index.12do2fv267.js",
+      "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\index.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "127"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"51naF/DAdbWqb4lpB811BABk/wB/BordKNCwW9eJv68=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Feb 2025 08:47:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "12do2fv267"
+        },
+        {
+          "Name": "label",
+          "Value": "js/index.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-51naF/DAdbWqb4lpB811BABk/wB/BordKNCwW9eJv68="
+        }
+      ]
+    },
+    {
+      "Route": "js/index.js",
+      "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\index.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "127"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"51naF/DAdbWqb4lpB811BABk/wB/BordKNCwW9eJv68=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Feb 2025 08:47:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-51naF/DAdbWqb4lpB811BABk/wB/BordKNCwW9eJv68="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\site.js",
       "Selectors": [],
@@ -1727,6 +2490,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+        }
+      ]
+    },
+    {
+      "Route": "js/synchronization_db_button.baeow0f4lo.js",
+      "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\synchronization_db_button.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "677"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"U26VM71XYPx9tA/cTMrKko0KUFC+xMi8wdUArt5qaio=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 12:58:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "baeow0f4lo"
+        },
+        {
+          "Name": "label",
+          "Value": "js/synchronization_db_button.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-U26VM71XYPx9tA/cTMrKko0KUFC+xMi8wdUArt5qaio="
+        }
+      ]
+    },
+    {
+      "Route": "js/synchronization_db_button.js",
+      "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\synchronization_db_button.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "677"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"U26VM71XYPx9tA/cTMrKko0KUFC+xMi8wdUArt5qaio=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 12:58:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-U26VM71XYPx9tA/cTMrKko0KUFC+xMi8wdUArt5qaio="
+        }
+      ]
+    },
+    {
+      "Route": "js/upgrade_edit_component.js",
+      "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\upgrade_edit_component.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7318"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yiHae+42qUOr6lokfwmAeBIX5qsi6zZZ8bJ+T6nVdrM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 12:58:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yiHae+42qUOr6lokfwmAeBIX5qsi6zZZ8bJ+T6nVdrM="
+        }
+      ]
+    },
+    {
+      "Route": "js/upgrade_edit_component.mk1x0yx2fm.js",
+      "AssetFile": "F:\\Projects\\MVS\\AltiumSQL\\AltiumSQL\\wwwroot\\js\\upgrade_edit_component.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7318"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yiHae+42qUOr6lokfwmAeBIX5qsi6zZZ8bJ+T6nVdrM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 12:58:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mk1x0yx2fm"
+        },
+        {
+          "Name": "label",
+          "Value": "js/upgrade_edit_component.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yiHae+42qUOr6lokfwmAeBIX5qsi6zZZ8bJ+T6nVdrM="
         }
       ]
     },
