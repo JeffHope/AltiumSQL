@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AltiumSQL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0eebc2a012ca7aadc39f8a06e3db20a30a35f33")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d514d66228d814a201ec0600235c5442b01e11c")]
 [assembly: System.Reflection.AssemblyProductAttribute("AltiumSQL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AltiumSQL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

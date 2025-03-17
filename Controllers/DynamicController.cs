@@ -90,7 +90,38 @@ namespace AltiumSQL.Controllers
                     var property = entityType.GetProperty(prop.Key);
                     if (property != null)
                     {
-                        property.SetValue(entity, prop.Value);
+                        var value = prop.Value;
+                        if (value is JsonElement jsonElement)
+                        {
+                            // Преобразуем JsonElement в соответствующий тип свойства
+                            switch (jsonElement.ValueKind)
+                            {
+                                case JsonValueKind.String:
+                                    value = jsonElement.GetString();
+                                    break;
+                                case JsonValueKind.Number:
+                                    if (property.PropertyType == typeof(int))
+                                        value = jsonElement.GetInt32();
+                                    else if (property.PropertyType == typeof(long))
+                                        value = jsonElement.GetInt64();
+                                    else if (property.PropertyType == typeof(double))
+                                        value = jsonElement.GetDouble();
+                                    else if (property.PropertyType == typeof(decimal))
+                                        value = jsonElement.GetDecimal();
+                                    break;
+                                case JsonValueKind.True:
+                                case JsonValueKind.False:
+                                    value = jsonElement.GetBoolean();
+                                    break;
+                                case JsonValueKind.Null:
+                                    value = null;
+                                    break;
+                                default:
+                                    throw new NotSupportedException($"Тип {jsonElement.ValueKind} не поддерживается.");
+                            }
+                        }
+
+                        property.SetValue(entity, value);
                     }
                 }
 
