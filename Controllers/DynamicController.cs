@@ -21,9 +21,12 @@ namespace AltiumSQL.Controllers
                 // Получаем DbSet для динамического типа
                 var dbSet = _service.GetDynamicDbSet(tableName);
 
-                // Используем рефлексию для вызова метода ToList()
+                // Получаем тип динамической сущности
+                var entityType = dbSet.GetType().GetGenericArguments()[0];
+
+                // Получаем данные через рефлексию
                 var toListMethod = typeof(Enumerable).GetMethod("ToList")?
-                    .MakeGenericMethod(dbSet.GetType().GetGenericArguments()[0]);
+                    .MakeGenericMethod(entityType);
 
                 if (toListMethod == null)
                 {
@@ -32,13 +35,52 @@ namespace AltiumSQL.Controllers
 
                 var data = toListMethod.Invoke(null, new[] { dbSet });
 
-                return Ok(data);
+                // Конвертируем данные в JSON (Dictionary<string, object>)
+                var result = ((IEnumerable<object>)data).Select(item =>
+                {
+                    var properties = entityType.GetProperties();
+                    var dict = properties.ToDictionary(
+                        prop => prop.Name,
+                        prop => prop.GetValue(item)?.ToString() ?? "NULL"
+                    );
+
+                    return dict;
+                }).ToList();
+
+                return Ok(result);
             }
             catch (Exception ex)
             {
                 return StatusCode(500, $"Ошибка при получении данных: {ex.Message}");
             }
         }
+
+        //[HttpGet("{tableName}")]
+        //public IActionResult GetTableData(string tableName)
+        //{
+        //    try
+        //    {
+        //        // Получаем DbSet для динамического типа
+        //        var dbSet = _service.GetDynamicDbSet(tableName);
+
+        //        // Используем рефлексию для вызова метода ToList()
+        //        var toListMethod = typeof(Enumerable).GetMethod("ToList")?
+        //            .MakeGenericMethod(dbSet.GetType().GetGenericArguments()[0]);
+
+        //        if (toListMethod == null)
+        //        {
+        //            return StatusCode(500, "Метод 'ToList' не найден.");
+        //        }
+
+        //        var data = toListMethod.Invoke(null, new[] { dbSet });
+
+        //        return Ok(data);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return StatusCode(500, $"Ошибка при получении данных: {ex.Message}");
+        //    }
+        //}
 
         [HttpPost("{tableName}")]
         public IActionResult AddData(string tableName, [FromBody] Dictionary<string, object> data)

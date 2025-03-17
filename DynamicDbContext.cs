@@ -1,167 +1,172 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Reflection.Emit;
-using System.Text.Json;
-
 
 namespace AltiumSQL
 {
     public class DynamicDbContext : DbContext
     {
-        private readonly Dictionary<string, Type> _dynamicTypes = new();
+        private static Dictionary<string, Type> _dynamicTypes = new Dictionary<string, Type>();
 
-        public DynamicDbContext(DbContextOptions options) : base(options) { }
-
-        public DynamicDbContext() { }
-
-        public Type CreateDynamicModel(string modelName, Dictionary<string, Type> properties)
-        {
-            var assemblyName = new AssemblyName("DynamicModels");
-            var assemblyBuilder = AssemblyBuilder.DefineDynamicAssembly(assemblyName, AssemblyBuilderAccess.Run);
-            var moduleBuilder = assemblyBuilder.DefineDynamicModule("MainModule");
-            var typeBuilder = moduleBuilder.DefineType(modelName, TypeAttributes.Public);
-
-            foreach (var prop in properties)
-            {
-                var fieldBuilder = typeBuilder.DefineField("_" + prop.Key, prop.Value, FieldAttributes.Private);
-                var propertyBuilder = typeBuilder.DefineProperty(prop.Key, PropertyAttributes.HasDefault, prop.Value, null);
-
-                var getMethodBuilder = typeBuilder.DefineMethod("get_" + prop.Key,
-                    MethodAttributes.Public | MethodAttributes.SpecialName | MethodAttributes.HideBySig,
-                    prop.Value, Type.EmptyTypes);
-
-                var ilGet = getMethodBuilder.GetILGenerator();
-                ilGet.Emit(OpCodes.Ldarg_0);
-                ilGet.Emit(OpCodes.Ldfld, fieldBuilder);
-                ilGet.Emit(OpCodes.Ret);
-
-                var setMethodBuilder = typeBuilder.DefineMethod("set_" + prop.Key,
-                    MethodAttributes.Public | MethodAttributes.SpecialName | MethodAttributes.HideBySig,
-                    null, new[] { prop.Value });
-
-                var ilSet = setMethodBuilder.GetILGenerator();
-                ilSet.Emit(OpCodes.Ldarg_0);
-                ilSet.Emit(OpCodes.Ldarg_1);
-                ilSet.Emit(OpCodes.Stfld, fieldBuilder);
-                ilSet.Emit(OpCodes.Ret);
-
-                propertyBuilder.SetGetMethod(getMethodBuilder);
-                propertyBuilder.SetSetMethod(setMethodBuilder);
-            }
-
-            return typeBuilder.CreateType();
-        }
+        public DynamicDbContext(DbContextOptions<DynamicDbContext> options) : base(options) { }
 
         public object GetDynamicDbSet(string tableName, Dictionary<string, Type> properties)
         {
-            if (!_dynamicTypes.ContainsKey(tableName))
+            try
             {
-                var type = CreateDynamicModel(tableName, properties);
-                _dynamicTypes[tableName] = type;
+                if (!_dynamicTypes.ContainsKey(tableName))
+                {
+                    var dynamicType = CreateDynamicType(tableName, properties);
+                    _dynamicTypes[tableName] = dynamicType;
+                }
+
+                var dynamicTypeInstance = _dynamicTypes[tableName];
+                Console.WriteLine($"Получение DbSet для типа '{dynamicTypeInstance.Name}'...");
+
+                // Фильтруем метод Set, чтобы исключить конфликт перегрузок
+                var setMethod = this.GetType()
+                                    .GetMethods()
+                                    .Where(m => m.Name == nameof(Set) && m.IsGenericMethod && m.GetParameters().Length == 0)
+                                    .FirstOrDefault();
+
+                if (setMethod == null)
+                    throw new InvalidOperationException($"Не удалось найти метод 'Set' без аргументов для типа '{dynamicTypeInstance.Name}'.");
+
+                var dbSet = setMethod.MakeGenericMethod(dynamicTypeInstance).Invoke(this, null);
+                if (dbSet == null)
+                    throw new InvalidOperationException($"DbSet для типа '{dynamicTypeInstance.Name}' вернул null.");
+
+                return dbSet;
             }
-
-            var modelBuilder = new ModelBuilder();
-            modelBuilder.Entity(_dynamicTypes[tableName]);
-
-            // Получаем универсальный метод Set<TEntity>()
-            var setMethod = typeof(DbContext)
-                .GetMethods()
-                .FirstOrDefault(m => m.Name == "Set" && m.IsGenericMethod);
-
-            if (setMethod == null)
+            catch (Exception ex)
             {
-                throw new InvalidOperationException("Method 'Set<TEntity>()' not found.");
+                Console.WriteLine($"Ошибка при создании DbSet для таблицы '{tableName}': {ex}");
+                throw;
             }
-
-            // Создаем универсальный метод для конкретного типа
-            var genericSetMethod = setMethod.MakeGenericMethod(_dynamicTypes[tableName]);
-
-            // Вызываем метод и возвращаем DbSet<TEntity>
-            return genericSetMethod.Invoke(this, null);
         }
 
-        //public Type CreateDynamicModel(string modelName, Dictionary<string, Type> properties)
-        //{
-        //    var assemblyName = new AssemblyName("DynamicModels");
-        //    var assemblyBuilder = AssemblyBuilder.DefineDynamicAssembly(assemblyName, AssemblyBuilderAccess.Run);
-        //    var moduleBuilder = assemblyBuilder.DefineDynamicModule("MainModule");
-        //    var typeBuilder = moduleBuilder.DefineType(modelName, TypeAttributes.Public);
 
-        //    foreach (var prop in properties)
-        //    {
-        //        var fieldBuilder = typeBuilder.DefineField("_" + prop.Key, prop.Value, FieldAttributes.Private);
-        //        var propertyBuilder = typeBuilder.DefineProperty(prop.Key, PropertyAttributes.HasDefault, prop.Value, null);
 
-        //        var getMethodBuilder = typeBuilder.DefineMethod("get_" + prop.Key,
-        //            MethodAttributes.Public | MethodAttributes.SpecialName | MethodAttributes.HideBySig,
-        //            prop.Value, Type.EmptyTypes);
 
-        //        var ilGet = getMethodBuilder.GetILGenerator();
-        //        ilGet.Emit(OpCodes.Ldarg_0);
-        //        ilGet.Emit(OpCodes.Ldfld, fieldBuilder);
-        //        ilGet.Emit(OpCodes.Ret);
 
-        //        var setMethodBuilder = typeBuilder.DefineMethod("set_" + prop.Key,
-        //            MethodAttributes.Public | MethodAttributes.SpecialName | MethodAttributes.HideBySig,
-        //            null, new[] { prop.Value });
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            foreach (var dynamicType in _dynamicTypes.Values)
+            {
+                Console.WriteLine($"Регистрация типа '{dynamicType.Name}' в модели...");
 
-        //        var ilSet = setMethodBuilder.GetILGenerator();
-        //        ilSet.Emit(OpCodes.Ldarg_0);
-        //        ilSet.Emit(OpCodes.Ldarg_1);
-        //        ilSet.Emit(OpCodes.Stfld, fieldBuilder);
-        //        ilSet.Emit(OpCodes.Ret);
+                var entityType = modelBuilder.Entity(dynamicType);
 
-        //        propertyBuilder.SetGetMethod(getMethodBuilder);
-        //        propertyBuilder.SetSetMethod(setMethodBuilder);
-        //    }
+                // Указываем PartNumber как первичный ключ
+                if (dynamicType.GetProperty("Part Number") != null)
+                {
+                    entityType.HasKey("Part Number");
+                    Console.WriteLine($"Поле 'Part Number' установлено как первичный ключ для '{dynamicType.Name}'.");
+                }
+                else
+                {
+                    entityType.HasNoKey();
+                    Console.WriteLine($"Тип '{dynamicType.Name}' зарегистрирован как keyless.");
+                }
+            }
+        }
 
-        //    return typeBuilder.CreateType();
-        //}
 
-        //public DbSet<object> GetDynamicDbSet(string tableName, Dictionary<string, Type> properties)
-        //{
-        //    if (!_dynamicTypes.ContainsKey(tableName))
-        //    {
-        //        var type = CreateDynamicModel(tableName, properties);
-        //        _dynamicTypes[tableName] = type;
-        //    }
 
-        //    var modelBuilder = new ModelBuilder();
-        //    modelBuilder.Entity(_dynamicTypes[tableName]);
+        private Type CreateDynamicType(string tableName, Dictionary<string, Type> properties)
+        {
+            try
+            {
+                string sanitizedTableName = new string(tableName
+                    .Where(c => char.IsLetterOrDigit(c) || c == '_')
+                    .ToArray());
 
-        //    // Получаем универсальный метод Set<TEntity>()
-        //    var setMethod = typeof(DbContext)
-        //        .GetMethods()
-        //        .FirstOrDefault(m => m.Name == "Set" && m.IsGenericMethod);
+                Console.WriteLine($"Создание динамического типа для таблицы '{sanitizedTableName}'...");
 
-        //    if (setMethod == null)
-        //    {
-        //        throw new InvalidOperationException("Method 'Set<TEntity>()' not found.");
-        //    }
+                var assemblyName = new AssemblyName("DynamicAssembly");
+                var assemblyBuilder = AssemblyBuilder.DefineDynamicAssembly(assemblyName, AssemblyBuilderAccess.Run);
+                var moduleBuilder = assemblyBuilder.DefineDynamicModule("MainModule");
+                var typeBuilder = moduleBuilder.DefineType(
+                    sanitizedTableName,
+                    TypeAttributes.Public |
+                    TypeAttributes.Class |
+                    TypeAttributes.AutoClass |
+                    TypeAttributes.AnsiClass |
+                    TypeAttributes.BeforeFieldInit |
+                    TypeAttributes.AutoLayout,
+                    null
+                );
 
-        //    // Создаем универсальный метод для конкретного типа
-        //    var genericSetMethod = setMethod.MakeGenericMethod(_dynamicTypes[tableName]);
+                foreach (var prop in properties)
+                {
+                    Console.WriteLine($"Добавление свойства: {prop.Key} ({prop.Value})");
 
-        //    // Вызываем метод
-        //    var dbSet = genericSetMethod.Invoke(this, null);
+                    var fieldBuilder = typeBuilder.DefineField($"_{prop.Key}", prop.Value, FieldAttributes.Private);
 
-        //    return (DbSet<object>)dbSet;
-        //    //if (!_dynamicTypes.ContainsKey(tableName))
-        //    //{
-        //    //    var type = CreateDynamicModel(tableName, properties);
-        //    //    _dynamicTypes[tableName] = type;
-        //    //}
+                    var propertyBuilder = typeBuilder.DefineProperty(
+                        prop.Key,
+                        PropertyAttributes.HasDefault,
+                        prop.Value,
+                        null
+                    );
 
-        //    //var modelBuilder = new ModelBuilder();
-        //    //modelBuilder.Entity(_dynamicTypes[tableName]);
+                    var getter = typeBuilder.DefineMethod(
+                        $"get_{prop.Key}",
+                        MethodAttributes.Public | MethodAttributes.SpecialName | MethodAttributes.HideBySig,
+                        prop.Value,
+                        Type.EmptyTypes
+                    );
 
-        //    //var dbSetType = typeof(DbSet<>).MakeGenericType(_dynamicTypes[tableName]);
-        //    //var dbSet = this.GetType().GetMethod("Set")?.MakeGenericMethod(_dynamicTypes[tableName]).Invoke(this, null);
+                    var getterIL = getter.GetILGenerator();
+                    getterIL.Emit(OpCodes.Ldarg_0);
+                    getterIL.Emit(OpCodes.Ldfld, fieldBuilder);
+                    getterIL.Emit(OpCodes.Ret);
 
-        //    //return (DbSet<object>)dbSet;
-        //}
+                    var setter = typeBuilder.DefineMethod(
+                        $"set_{prop.Key}",
+                        MethodAttributes.Public | MethodAttributes.SpecialName | MethodAttributes.HideBySig,
+                        null,
+                        new[] { prop.Value }
+                    );
+
+                    var setterIL = setter.GetILGenerator();
+                    setterIL.Emit(OpCodes.Ldarg_0);
+                    setterIL.Emit(OpCodes.Ldarg_1);
+                    setterIL.Emit(OpCodes.Stfld, fieldBuilder);
+                    setterIL.Emit(OpCodes.Ret);
+
+                    propertyBuilder.SetGetMethod(getter);
+                    propertyBuilder.SetSetMethod(setter);
+
+                    // Добавляем атрибут [Key] к PartNumber
+                    if (prop.Key == "Part Number")
+                    {
+                        var keyAttribute = typeof(System.ComponentModel.DataAnnotations.KeyAttribute);
+                        var attributeBuilder = new CustomAttributeBuilder(
+                            keyAttribute.GetConstructor(Type.EmptyTypes),
+                            new object[] { }
+                        );
+                        propertyBuilder.SetCustomAttribute(attributeBuilder);
+                        Console.WriteLine($"Атрибут [Key] добавлен к полю '{prop.Key}'.");
+                    }
+                }
+
+                var dynamicType = typeBuilder.CreateType();
+                Console.WriteLine($"Динамический тип '{sanitizedTableName}' создан успешно.");
+                return dynamicType;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка при создании типа '{tableName}': {ex.Message}");
+                throw;
+            }
+        }
+
+
+
     }
 }
