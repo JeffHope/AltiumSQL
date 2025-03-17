@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Reflection;
+using System.Text.Json;
 
 namespace AltiumSQL.Controllers
 {
@@ -13,38 +15,27 @@ namespace AltiumSQL.Controllers
             _service = service;
         }
 
+        // ✅ Получить все записи
         [HttpGet("{tableName}")]
         public IActionResult GetTableData(string tableName)
         {
             try
             {
-                // Получаем DbSet для динамического типа
                 var dbSet = _service.GetDynamicDbSet(tableName);
 
-                // Получаем тип динамической сущности
                 var entityType = dbSet.GetType().GetGenericArguments()[0];
-
-                // Получаем данные через рефлексию
                 var toListMethod = typeof(Enumerable).GetMethod("ToList")?
                     .MakeGenericMethod(entityType);
 
-                if (toListMethod == null)
-                {
-                    return StatusCode(500, "Метод 'ToList' не найден.");
-                }
+                var data = toListMethod?.Invoke(null, new[] { dbSet });
 
-                var data = toListMethod.Invoke(null, new[] { dbSet });
-
-                // Конвертируем данные в JSON (Dictionary<string, object>)
                 var result = ((IEnumerable<object>)data).Select(item =>
                 {
                     var properties = entityType.GetProperties();
-                    var dict = properties.ToDictionary(
+                    return properties.ToDictionary(
                         prop => prop.Name,
                         prop => prop.GetValue(item)?.ToString() ?? "NULL"
                     );
-
-                    return dict;
                 }).ToList();
 
                 return Ok(result);
@@ -55,46 +46,45 @@ namespace AltiumSQL.Controllers
             }
         }
 
-        //[HttpGet("{tableName}")]
-        //public IActionResult GetTableData(string tableName)
-        //{
-        //    try
-        //    {
-        //        // Получаем DbSet для динамического типа
-        //        var dbSet = _service.GetDynamicDbSet(tableName);
+        // ✅ Получить запись по ID
+        [HttpGet("{tableName}/{id}")]
+        public IActionResult GetById(string tableName, string id)
+        {
+            try
+            {
+                var dbSet = _service.GetDynamicDbSet(tableName);
+                var entityType = dbSet.GetType().GetGenericArguments()[0];
+                var findMethod = dbSet.GetType().GetMethod("Find");
 
-        //        // Используем рефлексию для вызова метода ToList()
-        //        var toListMethod = typeof(Enumerable).GetMethod("ToList")?
-        //            .MakeGenericMethod(dbSet.GetType().GetGenericArguments()[0]);
+                var entity = findMethod?.Invoke(dbSet, new object[] { id });
 
-        //        if (toListMethod == null)
-        //        {
-        //            return StatusCode(500, "Метод 'ToList' не найден.");
-        //        }
+                if (entity == null)
+                    return NotFound($"Запись с ID '{id}' не найдена");
 
-        //        var data = toListMethod.Invoke(null, new[] { dbSet });
+                var properties = entityType.GetProperties();
+                var result = properties.ToDictionary(
+                    prop => prop.Name,
+                    prop => prop.GetValue(entity)?.ToString() ?? "NULL"
+                );
 
-        //        return Ok(data);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return StatusCode(500, $"Ошибка при получении данных: {ex.Message}");
-        //    }
-        //}
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Ошибка при получении данных по ID: {ex.Message}");
+            }
+        }
 
+        // ✅ Добавить запись
         [HttpPost("{tableName}")]
         public IActionResult AddData(string tableName, [FromBody] Dictionary<string, object> data)
         {
             try
             {
-                // Получаем DbSet для динамического типа
                 var dbSet = _service.GetDynamicDbSet(tableName);
-
-                // Создаем экземпляр динамического типа
                 var entityType = dbSet.GetType().GetGenericArguments()[0];
                 var entity = Activator.CreateInstance(entityType);
 
-                // Заполняем свойства сущности
                 foreach (var prop in data)
                 {
                     var property = entityType.GetProperty(prop.Key);
@@ -104,47 +94,77 @@ namespace AltiumSQL.Controllers
                     }
                 }
 
-                // Добавляем сущность в DbSet
                 var addMethod = dbSet.GetType().GetMethod("Add");
                 addMethod?.Invoke(dbSet, new[] { entity });
 
-                // Сохраняем изменения
-                var saveChangesMethod = _service.GetType().GetMethod("SaveChanges");
-                saveChangesMethod?.Invoke(_service, null);
+                _service.SaveChanges();
 
-                return Ok();
+                return Ok("Данные добавлены успешно");
             }
             catch (Exception ex)
             {
                 return StatusCode(500, $"Ошибка при добавлении данных: {ex.Message}");
             }
         }
-        //public IActionResult GetTableData(string tableName)
-        //{
-        //    var dbSet = _service.GetDynamicDbSet(tableName);
-        //    var data = dbSet.ToList();
-        //    return Ok(data);
-        //}
 
-        //[HttpPost("{tableName}")]
-        //public IActionResult AddData(string tableName, [FromBody] Dictionary<string, object> data)
-        //{
-        //    var dbSet = _service.GetDynamicDbSet(tableName);
-        //    var entity = Activator.CreateInstance(dbSet.EntityType.ClrType);
+        // ✅ Обновить запись по ID
+        [HttpPut("{tableName}/{id}")]
+        public IActionResult UpdateData(string tableName, string id, [FromBody] Dictionary<string, object> data)
+        {
+            try
+            {
+                var dbSet = _service.GetDynamicDbSet(tableName);
+                var entityType = dbSet.GetType().GetGenericArguments()[0];
+                var findMethod = dbSet.GetType().GetMethod("Find");
 
-        //    foreach (var prop in data)
-        //    {
-        //        var property = entity.GetType().GetProperty(prop.Key);
-        //        if (property != null)
-        //        {
-        //            property.SetValue(entity, prop.Value);
-        //        }
-        //    }
+                var entity = findMethod?.Invoke(dbSet, new object[] { id });
+                if (entity == null)
+                    return NotFound($"Запись с ID '{id}' не найдена");
 
-        //    dbSet.Add(entity);
-        //    _service.GetType().GetMethod("SaveChanges").Invoke(_service, null);
+                foreach (var prop in data)
+                {
+                    var property = entityType.GetProperty(prop.Key);
+                    if (property != null)
+                    {
+                        property.SetValue(entity, prop.Value);
+                    }
+                }
 
-        //    return Ok();
-        //}
+                _service.SaveChanges();
+
+                return Ok("Данные обновлены успешно");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Ошибка при обновлении данных: {ex.Message}");
+            }
+        }
+
+        // ✅ Удалить запись по ID
+        [HttpDelete("{tableName}/{id}")]
+        public IActionResult DeleteData(string tableName, string id)
+        {
+            try
+            {
+                var dbSet = _service.GetDynamicDbSet(tableName);
+                var entityType = dbSet.GetType().GetGenericArguments()[0];
+                var findMethod = dbSet.GetType().GetMethod("Find");
+
+                var entity = findMethod?.Invoke(dbSet, new object[] { id });
+                if (entity == null)
+                    return NotFound($"Запись с ID '{id}' не найдена");
+
+                var removeMethod = dbSet.GetType().GetMethod("Remove");
+                removeMethod?.Invoke(dbSet, new[] { entity });
+
+                _service.SaveChanges();
+
+                return Ok("Данные удалены успешно");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Ошибка при удалении данных: {ex.Message}");
+            }
+        }
     }
 }

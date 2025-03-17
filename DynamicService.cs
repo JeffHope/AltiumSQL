@@ -15,6 +15,10 @@ namespace AltiumSQL
             var json = File.ReadAllText("config.json");
             _config = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(json);
         }
+        public void SaveChanges()
+        {
+            _context.SaveChanges();
+        }
 
         public object GetDynamicDbSet(string tableName)
         {
